@@ -42,7 +42,7 @@ I will share a simple way to bypass carrier restrictions on Android devices by t
 
 3. Insert the SIM card and enjoy your unlocked device.
 
-# 🔄 Upgrading to Android 15 Without Losing Unlock
+## 🔄 Upgrading to Android 15 Without Losing Unlock
 
 1. Download the update.
 2. **Before rebooting**, enable **Airplane mode**.
@@ -51,7 +51,7 @@ I will share a simple way to bypass carrier restrictions on Android devices by t
 5. **Disable background data usage** for the **Device Setup** app.
 6. Turn off **Airplane mode**.
 
-# 🚨 Additional Notes
+##🚨 Additional Notes
 
 - **Google can reverse this at any time.**
 - The **Device Setup app has the permission to reset its own restrictions**.
@@ -59,19 +59,19 @@ I will share a simple way to bypass carrier restrictions on Android devices by t
 - To persist the bypass, **make the device owner app an inherited DPM app** using `Owndroid`.
 - The **OEM Unlock switch may be toggled** if both eSIM and physical SIM bypasses are successful.
 
-# 📜 License
+## 📜 License
 This project is licensed under the **MIT License**. See the [LICENSE](LICENSE) file for details.
 
-# 📌 Related Scripts
+## 📌 Related Scripts
 I made two helper scripts for this method
 
-## [install-adb.bat](install-adb.bat)
+### [install-adb.bat](install-adb.bat)
 Automates the download and expand zip of the latest ADB tools, which are saved to `C:\Users\YourUserName\platform-tools`.
 
-## [run.bat](run.bat)
+### [run.bat](run.bat)
 Automates the [**Apply ADB Commands**](https://github.com/tomgly/adb-unlock-bypass/edit/main/README.md#apply-adb-commands), executing the required ADB commands.
 
-# 🔗 References
+## 🔗 References
 This method is based on research and findings from the following source
 
 - [Carrier unlock a Google Pixel phone (tested on Pixel 9, 8 and 5)](https://xdaforums.com/t/carrier-unlock-a-google-pixel-phone-tested-on-pixel-9-8-and-5.4680825/)
