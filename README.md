@@ -51,7 +51,7 @@ I will share a simple way to bypass carrier restrictions on Android devices by t
 5. **Disable background data usage** for the **Device Setup** app.
 6. Turn off **Airplane mode**.
 
-##🚨 Additional Notes
+## 🚨 Additional Notes
 
 - **Google can reverse this at any time.**
 - The **Device Setup app has the permission to reset its own restrictions**.
