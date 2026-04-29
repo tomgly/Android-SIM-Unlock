@@ -90,7 +90,7 @@ Physical SIMs are more commonly reported to work. **eSIM support is uncertain.**
 
 Enable Developer options and USB debugging, then connect the phone to your computer.
 
-Run those commands.
+Run these commands:
 
 ```sh
 adb shell cmd appops set com.google.android.apps.work.oobconfig WAKE_LOCK deny
@@ -104,12 +104,12 @@ Insert the physical SIM card and check whether mobile service works.
 
 ## Helper scripts
 
-This repository includes helper scripts for convenience.
+This repository includes Windows helper scripts for convenience.
 
 - [`install-adb.bat`](./install-adb.bat) downloads and extracts Android platform tools.
 - [`run.bat`](./run.bat) runs the ADB appops commands listed above.
 
-You can use the scripts or run the commands manually.
+You can also run the ADB commands manually on Windows, macOS, or Linux if you already have ADB installed.
 
 ## Android updates
 
