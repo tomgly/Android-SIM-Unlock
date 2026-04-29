@@ -1,0 +1,139 @@
+name: Device support / question
+description: Ask whether this method may work on a specific device or setup
+title: "[Device support] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Before opening an issue
+
+        This project documents a Pixel-specific SIM/carrier-lock workaround.
+
+        This method does **not** unlock the bootloader, does **not** bypass OEM unlocking restrictions, and is **not** a general SIM unlock method for all Android devices.
+
+        For non-Pixel devices, this method is unlikely to apply unless the same Pixel-specific setup components are involved.
+
+  - type: input
+    id: device-model
+    attributes:
+      label: Device model
+      description: Include the exact model name and model number if possible.
+      placeholder: "Example: Pixel 8, Pixel 7a, Galaxy A16"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: device-type
+    attributes:
+      label: Device type
+      description: Is this a Google Pixel device?
+      options:
+        - Google Pixel
+        - Non-Pixel Android device
+        - Not sure
+    validations:
+      required: true
+
+  - type: input
+    id: android-version
+    attributes:
+      label: Android version / ROM
+      description: Include whether this is stock Android, a custom ROM, or a GSI.
+      placeholder: "Example: Android 14 stock, Android 13 GSI, LineageOS 21"
+    validations:
+      required: true
+
+  - type: input
+    id: carrier
+    attributes:
+      label: Carrier
+      description: Which carrier is the device locked to or from?
+      placeholder: "Example: Verizon, Boost Mobile, T-Mobile, AT&T"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: sim-type
+    attributes:
+      label: SIM type
+      options:
+        - Physical SIM
+        - eSIM
+        - Both physical SIM and eSIM
+        - Not sure
+    validations:
+      required: true
+
+  - type: dropdown
+    id: question-type
+    attributes:
+      label: What are you asking about?
+      description: This helps separate SIM/carrier-lock questions from OEM/bootloader unlock questions.
+      options:
+        - SIM/carrier unlock
+        - OEM unlock / bootloader unlock
+        - Both
+        - Not sure
+    validations:
+      required: true
+
+  - type: dropdown
+    id: bootloader-status
+    attributes:
+      label: Bootloader status
+      options:
+        - Locked
+        - Unlocked
+        - Not sure
+    validations:
+      required: true
+
+  - type: dropdown
+    id: oem-unlocking
+    attributes:
+      label: Is OEM unlocking available in Developer Options?
+      options:
+        - Available and enabled
+        - Available but disabled/greyed out
+        - Not shown
+        - Not sure
+    validations:
+      required: true
+
+  - type: textarea
+    id: question
+    attributes:
+      label: Question or issue
+      description: Describe what you are trying to do.
+      placeholder: "Example: I want to know if this method could work on my carrier-locked device."
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps-tried
+    attributes:
+      label: What have you tried?
+      description: List any commands, steps, or setup changes you already tried.
+      placeholder: |
+        1.
+        2.
+        3.
+    validations:
+      required: false
+
+  - type: textarea
+    id: result
+    attributes:
+      label: Result / behavior
+      description: What happened after trying the method, if anything?
+      placeholder: "Example: SIM is still locked, OEM unlocking is still greyed out, setup app is missing, etc."
+    validations:
+      required: false
+
+  - type: textarea
+    id: logs-screenshots
+    attributes:
+      label: Logs, screenshots, or extra notes
+      description: Add any relevant logs, screenshots, links, or additional context.
+    validations:
+      required: false
